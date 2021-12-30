@@ -1,3 +1,4 @@
+  GNU nano 5.4                                                                                 Dockerfile
 FROM arm32v7/alpine
 MAINTAINER Stanislav Demydiuk <s.demydiuk@gmail.com>
 
@@ -9,6 +10,7 @@ EXPOSE 22222
 COPY qemu-arm-static /usr/bin
 
 RUN apk add --no-cache \
+     cargo \
      git \
      gcc \
      linux-headers \

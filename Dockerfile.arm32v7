@@ -21,6 +21,7 @@ RUN apk add --no-cache \
      py3-pip \
      py3-cffi \
      py3-gevent \
+     py3-zope-interface \
      py3-msgpack && \
      mkdir -p /src/domoticz-mirobot-plugin && \
      cd /src/domoticz-mirobot-plugin && \

@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM amd64/alpine
 MAINTAINER Stanislav Demydiuk <s.demydiuk@gmail.com>
 
 ENV ROBOT_IP "127.0.0.1"

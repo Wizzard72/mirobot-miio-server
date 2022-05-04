@@ -6,6 +6,7 @@ ENV ROBOT_TOKEN "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0"
 
 EXPOSE 22222
 
+# Install dependencies
 RUN apk add --no-cache \
      cargo \
      git \
@@ -21,13 +22,14 @@ RUN apk add --no-cache \
      py3-gevent \
      py3-msgpack \
      rust
-     
-RUN mkdir -p /src/domoticz-mirobot-plugin
-RUN cd /src/domoticz-mirobot-plugin
+
+# Install python miio
 RUN pip3 install python-miio
-RUN git clone https://github.com/mrin/domoticz-mirobot-plugin.git .
-RUN chmod +x miio_server.py
-RUN chmod +x test.py
+
+# Install plugin
+RUN git clone https://github.com/mrin/domoticz-mirobot-plugin.git /src/domoticz-mirobot-plugin
+RUN chmod +x /src/domoticz-mirobot-plugin/miio_server.py
+RUN chmod +x /src/domoticz-mirobot-plugin/test.py
 RUN apk del git gcc linux-headers musl-dev python3-dev
 
 WORKDIR /src/domoticz-mirobot-plugin

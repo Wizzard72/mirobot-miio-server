@@ -1,5 +1,5 @@
-FROM amd64/alpine
-MAINTAINER Stanislav Demydiuk <s.demydiuk@gmail.com>
+FROM arm32v7/alpine
+MAINTAINER Wizzard72
 
 ENV ROBOT_IP "127.0.0.1"
 ENV ROBOT_TOKEN "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0"

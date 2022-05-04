@@ -1,4 +1,4 @@
-FROM arm32v7/alpine
+FROM arm32v7/alpine:3.12
 MAINTAINER Wizzard72
 
 ENV ROBOT_IP "127.0.0.1"

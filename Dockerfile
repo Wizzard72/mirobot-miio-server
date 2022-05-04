@@ -30,6 +30,8 @@ RUN pip3 install python-miio
 RUN git clone https://github.com/mrin/domoticz-mirobot-plugin.git /src/domoticz-mirobot-plugin
 RUN chmod +x /src/domoticz-mirobot-plugin/miio_server.py
 RUN chmod +x /src/domoticz-mirobot-plugin/test.py
+
+# Cleanup
 RUN apk del git gcc linux-headers musl-dev python3-dev
 
 WORKDIR /src/domoticz-mirobot-plugin

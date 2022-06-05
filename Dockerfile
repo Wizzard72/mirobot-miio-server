@@ -23,11 +23,37 @@ RUN apk add --no-cache \
      py3-msgpack \
      rust
 
+# Install required packages
+RUN pip3 install wheel
+RUN pip3 install android-backup
+RUN pip3 install asn1crypto
+RUN pip3 install attrs
+RUN pip3 install cffi
+RUN pip3 install click
+RUN pip3 install construct
+RUN pip3 install cryptography
+RUN pip3 install enum-compat
+RUN pip3 install gevent
+RUN pip3 install greenlet
+RUN pip3 install idna
+RUN pip3 install msgpack-python
+RUN pip3 install netifaces
+RUN pip3 install pretty-cron
+RUN pip3 install pycparser
+RUN pip3 install pycrypto
+RUN pip3 install pytz
+RUN pip3 install six
+RUN pip3 install typing
+RUN pip3 install zeroconf
+RUN pip3 install setuptools
+RUN pip3 install Cython
+RUN pip3 install PyYAML==5.3.1
+
 # Install python miio
 RUN pip3 install python-miio
 
 # Install plugin
-RUN git clone https://github.com/mrin/domoticz-mirobot-plugin.git /src/domoticz-mirobot-plugin
+RUN git clone https://github.com/Wizzard72/domoticz-mirobot-plugin.git /src/domoticz-mirobot-plugin
 RUN chmod +x /src/domoticz-mirobot-plugin/miio_server.py
 RUN chmod +x /src/domoticz-mirobot-plugin/test.py
 

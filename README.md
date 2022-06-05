@@ -44,3 +44,7 @@ cd xiaomi-mirobot
 pip3 install msgpack-python
 ```
 and proceed with Domoticz Hardware setup
+
+
+Creating docker image:
+sudo docker build -t miio-mirobot .

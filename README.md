@@ -82,7 +82,7 @@ Domoticz Hardware Setup:
 
   Login to Domoticz
   Go to the Hardware Page
-  
+  ![ble_tag](https://raw.githubusercontent.com/Wizzard72/Domoticz-Unifi-Presence/master/image/AnyOne.png)
 
 
 

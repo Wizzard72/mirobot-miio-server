@@ -1,6 +1,6 @@
 # mirobot-miio-server
 
-Originally created by: stas-demydiuk/mirobot-miio-server(https://github.com/stas-demydiuk/mirobot-miio-server)
+Originally created by: stas-demydiuk/mirobot-miio-server (https://github.com/stas-demydiuk/mirobot-miio-server)
 
 Docker container with server for [domoticz-mirobot-plugin](https://github.com/Wizzard72/mirobot-miio-server).
 

@@ -16,6 +16,8 @@ git pull https://github.com/Wizzard72/mirobot-miio-server
 cd mirobot-miio-server
 sudo docker build -t miio-mirobot .
 ```
+The build command takes some time.
+
 **Run container**
 ```
 docker run -d -p 22222:22222 -e "ROBOT_IP=<your robot ip>" -e "ROBOT_TOKEN=<your robot token>" --name=<container name> mirobot-miio-server

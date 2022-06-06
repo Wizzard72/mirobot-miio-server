@@ -79,6 +79,7 @@ sudo systemctl start domoticz.service
 ```
 
 Domoticz Hardware Setup:
+
   test
 
 

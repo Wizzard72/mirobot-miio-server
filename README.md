@@ -1,6 +1,7 @@
 # mirobot-miio-server
 
-Docker container with server for [domoticz-mirobot-plugin](https://github.com/Wizzard72/mirobot-miio-server)
+Docker container with server for [domoticz-mirobot-plugin](https://github.com/Wizzard72/mirobot-miio-server).
+Tested on a Raspberry Pi 4.
 
 ## How to use
 **Compile docker image**
@@ -78,7 +79,7 @@ sudo systemctl start domoticz.service
 ```
 
 Domoticz Hardware Setup:
-
+  test
 
 
 

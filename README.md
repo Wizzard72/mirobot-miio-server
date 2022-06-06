@@ -80,7 +80,9 @@ sudo systemctl start domoticz.service
 
 Domoticz Hardware Setup:
 
-  test
+  Login to Domoticz
+  Go to the Hardware Page
+  
 
 
 

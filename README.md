@@ -67,16 +67,18 @@ miio-mirobot           | server: vac result {'error': None, 'state_code': 8, 'ba
 
 ## Setup domoticz-mirobot-plugin
 
-Just follow the original [installation guide](https://github.com/mrin/domoticz-mirobot-plugin) and skip all MIIO Server related steps.
 Which basically just require:
 ```
-cd domoticz/plugins
+cd ~/domoticz/plugins
 git clone https://github.com/Wizzard72/mirobot-miio-server
-cd xiaomi-mirobot
+cd domoticz-mirobot-plugin 
 pip3 install msgpack-python
+sudo systemctl stop domoticz.service
+sudo systemctl start domoticz.service
 ```
-and proceed with Domoticz Hardware setup
+
+Domoticz Hardware Setup:
 
 
-Creating docker image:
-sudo docker build -t miio-mirobot .
+
+

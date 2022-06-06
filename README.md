@@ -22,6 +22,13 @@ You can get the token of your device using this [extractor](https://github.com/P
 ### Docker compose file example
 
 ```
+cd /opt
+sudo mkdir miio-server
+sudo nano docker-compose.yml
+```
+
+Paste this file:
+```
 version: '3'
 services:
   mirobot-miio-server:
@@ -35,13 +42,20 @@ services:
     restart: always
 ```
 
+
+
+```
+ctrl x
+```
+
+
 ## Setup original domoticz-mirobot-plugin
 
 Just follow the original [installation guide](https://github.com/mrin/domoticz-mirobot-plugin) and skip all MIIO Server related steps.
 Which basically just require:
 ```
 cd domoticz/plugins
-git clone [https://github.com/Wizzard72/mirobot-miio-server]
+git clone https://github.com/Wizzard72/mirobot-miio-server
 cd xiaomi-mirobot
 pip3 install msgpack-python
 ```

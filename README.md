@@ -19,15 +19,16 @@ docker run -d -p 22222:22222 -e "ROBOT_IP=<your robot ip>" -e "ROBOT_TOKEN=<your
 
 You can get the token of your device using this [extractor](https://github.com/PiotrMachowski/Xiaomi-cloud-tokens-extractor)
 
-### Docker compose file example
+### Docker compose
 
 ```
 cd /opt
 sudo mkdir miio-server
+cd miio-server
 sudo nano docker-compose.yml
 ```
 
-Paste this file:
+Paste this file ijn docker-compose.yml:
 ```
 version: '3'
 services:
@@ -42,14 +43,22 @@ services:
     restart: always
 ```
 
-
-
+Write the docker-compose.yml to disk:
 ```
 ctrl x
 ```
 
+Start the containter:
+```
+sudo docker-compose up -d
+```
 
-## Setup original domoticz-mirobot-plugin
+Check containter log
+```
+sudo docker-compose logs -f
+```
+
+## Setup domoticz-mirobot-plugin
 
 Just follow the original [installation guide](https://github.com/mrin/domoticz-mirobot-plugin) and skip all MIIO Server related steps.
 Which basically just require:

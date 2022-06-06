@@ -21,6 +21,7 @@ You can get the token of your device using this [extractor](https://github.com/P
 
 ### Docker compose
 
+Create docker compose config file:
 ```
 cd /opt
 sudo mkdir miio-server
@@ -28,7 +29,7 @@ cd miio-server
 sudo nano docker-compose.yml
 ```
 
-Paste this file ijn docker-compose.yml:
+Paste this file in docker-compose.yml:
 ```
 version: '3'
 services:
@@ -56,6 +57,12 @@ sudo docker-compose up -d
 Check containter log
 ```
 sudo docker-compose logs -f
+```
+
+Log looks like this:
+```
+miio-mirobot           | server: got socket msg: ['status']
+miio-mirobot           | server: vac result {'error': None, 'state_code': 8, 'battery': 100, 'fan_level': 102, 'clean_seconds': 14, 'clean_area': 0.155, 'cmd': 'status'}
 ```
 
 ## Setup domoticz-mirobot-plugin

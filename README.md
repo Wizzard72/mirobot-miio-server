@@ -9,7 +9,7 @@ Tested on a Raspberry Pi 4.
 ## How to use
 **Compile docker image**
 
-Login to the Raspberry Pi 4 (only tested with RPI4)
+Login to the Raspberry Pi 4 with Putty (https://www.putty.org/) for example
 ```
 cd ~
 git pull https://github.com/Wizzard72/mirobot-miio-server

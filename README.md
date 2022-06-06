@@ -1,6 +1,6 @@
 # mirobot-miio-server
 
-Docker container with server for [domoticz-mirobot-plugin](https://github.com/mrin/domoticz-mirobot-plugin)
+Docker container with server for [domoticz-mirobot-plugin](https://github.com/Wizzard72/mirobot-miio-server)
 
 ## How to use
 **Compile docker image**

@@ -41,7 +41,7 @@ Just follow the original [installation guide](https://github.com/mrin/domoticz-m
 Which basically just require:
 ```
 cd domoticz/plugins
-git clone https://github.com/Wizzard72/mirobot-miio-server
+git clone [https://github.com/Wizzard72/mirobot-miio-server]
 cd xiaomi-mirobot
 pip3 install msgpack-python
 ```

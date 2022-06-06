@@ -11,6 +11,7 @@ Tested on a Raspberry Pi 4.
 
 Login to the Raspberry Pi 4 (only tested with RPI4)
 ```
+cd ~
 git pull https://github.com/Wizzard72/mirobot-miio-server
 sudo docker build -t miio-mirobot .
 ```

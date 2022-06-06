@@ -82,7 +82,8 @@ Domoticz Hardware Setup:
 
   Login to Domoticz
   Go to the Hardware Page
-  ![ble_tag](https://raw.githubusercontent.com/Wizzard72/mirobot-miio-server/master/image/VacuumHardware.png)
+  
+  ![ble_tag](https://github.com/Wizzard72/mirobot-miio-server/blob/master/image/VacuumHardware.png?raw=true)
 
 
 

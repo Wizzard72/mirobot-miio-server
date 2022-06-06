@@ -3,10 +3,11 @@
 Docker container with server for [domoticz-mirobot-plugin](https://github.com/mrin/domoticz-mirobot-plugin)
 
 ## How to use
-**Pull image**
-
+**Compile docker image**
+Login to the Raspberry Pi 4 (only tested with RPI4)
 ```
-docker pull demydiuk/mirobot-miio-server
+git pull https://github.com/Wizzard72/mirobot-miio-server
+sudo docker build -t miio-mirobot .
 ```
 **Run container**
 ```

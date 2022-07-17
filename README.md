@@ -1,3 +1,5 @@
+# !!!! Final version - I'm not maintaining this plugin anymore. Recently migrated to Home Assistant.
+
 # mirobot-miio-server
 
 Originally created by: stas-demydiuk/mirobot-miio-server (https://github.com/stas-demydiuk/mirobot-miio-server)
